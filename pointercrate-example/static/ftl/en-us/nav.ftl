@@ -1,4 +1,4 @@
-nav-demonlist = Demonlist
+nav-demonlist = SaleeList
     .stats-viewer = Stats Viewer
     .record-submitter = Record Submitter
     .time-machine = Time Machine

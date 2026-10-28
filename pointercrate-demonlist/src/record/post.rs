@@ -147,21 +147,18 @@ impl NormalizedSubmission {
             });
         }
 
-        match self.raw_footage {
-            Some(ref raw) => {
-                let _ = Url::parse(raw).map_err(|_| DemonlistError::MalformedRawUrl)?;
+        let raw_footage = match self.raw_footage {
+            Some(raw) if !raw.trim().is_empty() => {
+                let _ = Url::parse(&raw).map_err(|_| DemonlistError::MalformedRawUrl)?;
+                Some(raw)
             },
-            None if self.status == RecordStatus::Submitted => {
-                // list mods can submit without raw
-                return Err(DemonlistError::RawRequired);
-            },
-            _ => (),
-        }
+            _ => None,
+        };
 
         Ok(ValidatedSubmission {
             progress: self.progress,
             video: self.video,
-            raw_footage: self.raw_footage,
+            raw_footage,
             status: self.status,
             player: self.player,
             demon: self.demon,

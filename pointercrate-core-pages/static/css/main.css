@@ -25,14 +25,14 @@
   --color-border: lightgray;
   --color-border-broken: #555;
 
-  --color-bg: white;
+  --color-bg: #fff7fb;
 
-  --color-link: blue;
-  --color-link-dark: #f77e39;
+  --color-link: #c2185b;
+  --color-link-dark: #ad1457;
 
-  --color-pc-button-bg: #0881c6;
-  --color-pc-button-bg-hover: #076696;
-  --color-pc-button-bg-click: #055075;
+  --color-pc-button-bg: #e84393;
+  --color-pc-button-bg-hover: #d63384;
+  --color-pc-button-bg-click: #b02a6b;
   --color-pc-button-text: white;
   --color-pc-button-text-click: #eee;
 

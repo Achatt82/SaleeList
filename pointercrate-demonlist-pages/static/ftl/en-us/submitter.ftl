@@ -49,7 +49,7 @@ record-submission = Record Submission
     .raw-footage = Raw footage
     .raw-footage-info-a = The unedited and untrimmed video for this completion, uploaded to a non-compressing (e.g. not YouTube) file-sharing service such as google drive. Note: Players can be given a one-time exception to use a stream VOD as raw footage.
     .raw-footage-info-b = Any personal information possibly contained within raw footage (e.g. names, sensitive conversations) will be kept strictly confidential and will not be shared outside of the demonlist team. Conversely, you acknowledge that you might inadvertently share such information by providing raw footage. You have the right to request deletion of your record note by contacting a list administrator.
-    .raw-footage-note = This is required for every record submitted to the list!
+    .raw-footage-note = Raw footage is optional. It helps the list team verify the record.
 
     .raw-footage-validator-typemismatch = Please enter a valid URL
 

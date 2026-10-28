@@ -49,7 +49,7 @@ impl From<DemonPage> for PageFragment {
 impl DemonPage {
     fn title(&self) -> String {
         let mut title = format!(
-            "{} - Geometry Dash Demonlist",
+            "{} - SaleeList",
             self.data.demon.base.name // FIXME: flatten the structs, holy shit
         );
 
@@ -82,28 +82,28 @@ impl DemonPage {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "item": {
-                                    "@id": "https://pointercrate.com/",
-                                    "name": "pointercrate"
+                                    "@id": "/",
+                                    "name": "SaleeList"
                                 }
                             },{
                                 "@type": "ListItem",
                                 "position": 2,
                                 "item": {
-                                    "@id": "https://pointercrate.com/demonlist/",
-                                    "name": "demonlist"
+                                    "@id": "/demonlist/",
+                                    "name": "SaleeList"
                                 }
                             },{
                                 "@type": "ListItem",
                                 "position": 3,
                                 "item": {
-                                    "@id": "https://pointercrate.com/demonlist/"##)) (self.data.position()) (PreEscaped(r##"/",
+                                    "@id": "/demonlist/"##)) (self.data.position()) (PreEscaped(r##"/",
                                     "name": ""##)) (self.data.name()) (PreEscaped(r##""
                                 }
                             }
                         ]
                     },
                     "name": "#"##)) (self.data.position()) " - " (self.data.name()) (PreEscaped(r##"","description": ""##)) (self.description().replace(r"\", r"\\")) (PreEscaped(r##"",
-                    "url": "https://pointercrate.com/demonlist/{0}/"
+                    "url": "/demonlist/{0}/"
                 }
                 </script>
             "##))
@@ -242,7 +242,7 @@ impl DemonPage {
                     }
                     (PreEscaped(format!(r#"
                     <script>
-                    document.getElementById("demon-heading").addEventListener('click', () => navigator.clipboard.writeText('https://pointercrate.com/demonlist/permalink/{}/?redirect'))
+                    document.getElementById("demon-heading").addEventListener('click', () => navigator.clipboard.writeText(location.origin + '/demonlist/permalink/{}/'))
                     </script>
                     "#, self.data.demon.base.id)))
                     h3 {

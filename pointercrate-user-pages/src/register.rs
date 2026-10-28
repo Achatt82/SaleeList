@@ -6,7 +6,7 @@ use pointercrate_core_pages::{trp_html, PageFragment};
 use pointercrate_user::config;
 
 pub fn registration_page() -> PageFragment {
-    let mut frag = PageFragment::new("Pointercrate - Registration", "Register for a new pointercrate account!")
+    let mut frag = PageFragment::new("SaleeList - Registration", "Register for a new SaleeList account!")
         .module("/static/user/js/register.js")
         .module("/static/core/js/modules/form.js")
         .module("/static/core/js/modules/tab.js")

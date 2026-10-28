@@ -12,9 +12,8 @@ pub struct IndividualStatsViewer {
 impl From<IndividualStatsViewer> for PageFragment {
     fn from(stats_viewer: IndividualStatsViewer) -> Self {
         PageFragment::new(
-            "Individual Stats Viewer",
-            "The pointercrate individual stats viewer, a ranking of the worlds best Geometry Dash players. Now more local than ever, \
-             allowing you to see who's the best in your state!",
+            "SaleeList Stats Viewer",
+            "The SaleeList stats viewer, a ranking of Geometry Dash players.",
         )
         .module("/static/demonlist/js/modules/statsviewer.js")
         .module("/static/demonlist/js/statsviewer/individual.js")

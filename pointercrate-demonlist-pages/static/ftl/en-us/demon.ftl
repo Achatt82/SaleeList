@@ -18,7 +18,7 @@ demon-gdversion = Created In
 
 demon-ngsong = Newgrounds Song
 
-demon-score = Demonlist score ({$percent}%)
+demon-score = SaleeList score ({$percent}%)
 
 demon-video = Verification Video
     .validator-typemismatch = Please enter a valid URL

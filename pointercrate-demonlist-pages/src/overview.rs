@@ -26,7 +26,7 @@ pub struct OverviewPage {
 
 impl From<OverviewPage> for PageFragment {
     fn from(page: OverviewPage) -> Self {
-        PageFragment::new("Geometry Dash Demonlist", "The official pointercrate Demonlist!")
+        PageFragment::new("SaleeList", "SaleeList, a Geometry Dash demonlist.")
             .module("/static/core/js/modules/form.js")
             .module("/static/demonlist/js/modules/demonlist.js")
             .module("/static/demonlist/js/demonlist.js")
@@ -52,23 +52,23 @@ impl OverviewPage {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "item": {
-                                    "@id": "https://pointercrate.com/",
-                                    "name": "pointercrate"
+                                    "@id": "/",
+                                    "name": "SaleeList"
                                 }
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "item": {
-                                    "@id": "https://pointercrate.com/demonlist/",
-                                    "name": "demonlist"
+                                    "@id": "/demonlist/",
+                                    "name": "SaleeList"
                                 }
                             }
                         ]
                     },
-                    "name": "Geometry Dash Demonlist",
-                    "description": "The official pointercrate Demonlist!",
-                    "url": "https://pointercrate.com/demonlist/"
+                    "name": "SaleeList",
+                    "description": "SaleeList, a Geometry Dash demonlist.",
+                    "url": "/demonlist/"
                 }
                 </script>
             "#))
@@ -79,7 +79,7 @@ impl OverviewPage {
                 </script>", list_config::list_size(), list_config::extended_list_size())
             ))
             // FIXME: abstract away
-            link ref = "canonical" href = "https://pointercrate.com/demonlist/";
+            link ref = "canonical" href = "/demonlist/";
         }
     }
 

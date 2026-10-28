@@ -1,4 +1,4 @@
-footer-demonlist = Демонлист
+footer-demonlist = SaleeList
     .top-demon = Нынешний сложнейший демон
     .extended-list = { extended-list }
     .legacy-list = { legacy-list }

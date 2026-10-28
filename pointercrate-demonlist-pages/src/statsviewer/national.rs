@@ -5,9 +5,8 @@ use pointercrate_core_pages::{head::HeadLike, PageFragment};
 
 pub fn nation_based_stats_viewer() -> PageFragment {
     PageFragment::new(
-        "Nation Stats Viewer",
-        "The pointercrate nation stats viewer, ranking how well each nation's players are doing in their quest to collectively complete \
-         the entire demonlist!",
+        "SaleeList Nation Stats",
+        "The SaleeList nation stats viewer, ranking players by country.",
     )
     .module("/static/demonlist/js/modules/statsviewer.js")
     .module("/static/demonlist/js/statsviewer/nation.js")
