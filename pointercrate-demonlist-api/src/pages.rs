@@ -90,7 +90,13 @@ pub async fn demon_permalink(demon_id: i32, pool: &State<PointercratePool>) -> R
 
     let position = MinimalDemon::by_id(demon_id, &mut connection).await?.position;
 
-    Ok(Redirect::to(rocket::uri!("/demonlist", demon_page(position))))
+    Ok(Redirect::to(format!("/demonlist/{position}/")))
+}
+
+/// Rocket's generated redirect drops the trailing slash, and the level route requires it.
+#[rocket::get("/<position>", rank = 2)]
+pub fn demon_page_missing_slash(position: i16) -> Redirect {
+    Redirect::to(format!("/demonlist/{position}/"))
 }
 
 #[localized]
